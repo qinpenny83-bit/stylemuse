@@ -1,0 +1,187 @@
+@import "tailwindcss";
+
+@theme {
+  /* 设计系统 3.0：撞色潮流版 —— 电光紫 + 荧光青柠 + 落日珊瑚，编辑部版式不变 */
+  --color-cream-50: #faf8fd;
+  --color-cream-100: #f2eef8;
+  --color-cream-200: #e6e0f0;
+  --color-cream-300: #d3cae3;
+  --color-sand-400: #beb1d2;
+
+  --color-ink-950: #19131e;
+  --color-ink-900: #261d2e;
+  --color-ink-700: #4d4256;
+  --color-ink-500: #8a7c93;
+  --color-ink-400: #a99bb2;
+  --color-ink-300: #c9bdd1;
+
+  --color-rose-100: #f1edff;
+  --color-rose-200: #e1dafd;
+  --color-rose-300: #c3b3fb;
+  --color-rose-400: #a488f8;
+  --color-rose-500: #8b5cf6;
+  --color-rose-600: #7c3aed;
+  --color-rose-700: #6a2bd4;
+  --color-rose-800: #5721b0;
+
+  --color-gold-300: #d8f65f;
+  --color-gold-400: #c0e938;
+  --color-gold-500: #a3cf21;
+  --color-gold-600: #81a817;
+
+  --color-coral-400: #ff7a5c;
+  --color-coral-500: #ff4d3d;
+  --color-coral-600: #e63929;
+
+  --color-olive-500: #7fa02b;
+  --color-slateblue-500: #7d6cb8;
+
+  --font-display: "Playfair Display", "Noto Serif SC", "Songti SC", "STSong", "SimSun", Georgia, serif;
+  --font-sans: "Inter", "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+
+  --shadow-soft: 0 1px 2px rgb(25 19 30 / 0.05), 0 8px 24px -12px rgb(25 19 30 / 0.14);
+  --shadow-lift: 0 2px 6px rgb(25 19 30 / 0.07), 0 20px 44px -16px rgb(25 19 30 / 0.24);
+  --radius-card: 0.875rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream-50 text-ink-900 font-sans antialiased;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+h1, h2, h3, .font-display {
+  @apply font-display;
+}
+
+::selection {
+  background: var(--color-rose-200);
+}
+
+/* 精细滚动条 */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-cream-300) transparent;
+}
+
+/* ===== 编辑部工具类 ===== */
+
+/* 小号大写标签：宽字距 + 细线 */
+.eyebrow {
+  @apply text-[10.5px] font-semibold tracking-[0.32em] uppercase;
+}
+
+/* 细分割线 */
+.hairline {
+  height: 1px;
+  background: linear-gradient(to right, var(--color-cream-300), transparent);
+}
+
+/* 大号衬线编号（杂志页码感） */
+.editorial-num {
+  @apply font-display text-[13px] font-semibold tracking-[0.24em] text-gold-600;
+}
+
+/* ===== 基础组件 ===== */
+
+.card {
+  @apply bg-white rounded-xl shadow-soft border border-cream-200/80 transition-all duration-300;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-rose-200);
+  box-shadow: var(--shadow-lift);
+}
+
+.chip {
+  @apply inline-flex items-center gap-1 rounded-full border border-cream-300 bg-white/70 px-3 py-1 text-[13px] text-ink-700 transition-all duration-200 cursor-pointer select-none hover:-translate-y-px hover:border-rose-300 hover:bg-rose-50 hover:text-rose-700 active:scale-[0.96];
+}
+
+.chip-on {
+  @apply border-transparent font-semibold text-white shadow-soft;
+  background: linear-gradient(135deg, var(--color-rose-500), var(--color-rose-600));
+}
+
+/* 卡片/详情页的类型徽章 */
+.pill-rose {
+  @apply inline-flex items-center gap-1 rounded-full bg-rose-600/10 px-2.5 py-1 text-[11px] font-semibold tracking-wider text-rose-700;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-ink-900 px-6 py-3 text-[15px] text-cream-100 transition-all hover:bg-rose-700 hover:shadow-lift active:scale-[0.98] disabled:opacity-40 disabled:pointer-events-none;
+}
+
+.btn-accent {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-rose-600 px-6 py-3 text-[15px] text-white transition-all hover:bg-rose-500 hover:shadow-lift active:scale-[0.98] disabled:opacity-40 disabled:pointer-events-none;
+}
+
+.btn-ghost {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink-300 bg-white/50 px-6 py-3 text-[15px] text-ink-700 transition-all hover:border-ink-900 hover:text-ink-900 active:scale-[0.98] disabled:opacity-40;
+}
+
+.field-label {
+  @apply block text-[13px] font-medium text-ink-700 mb-1.5;
+}
+
+.field-input {
+  @apply w-full rounded-xl border border-cream-300 bg-white px-4 py-2.5 text-[15px] outline-none transition-colors focus:border-rose-400 focus:ring-2 focus:ring-rose-200;
+}
+
+/* ===== 动效 ===== */
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up {
+  animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-18px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.animate-fade-in-left {
+  animation: fadeInLeft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* 跑马灯：内容复制两份，平移 -50% 无缝循环 */
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 38s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* 导航下划线滑动动画 */
+.nav-underline {
+  position: relative;
+}
+.nav-underline::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 2px;
+  height: 2px;
+  background: var(--color-rose-500);
+  transition: left 0.28s cubic-bezier(0.22, 1, 0.36, 1), right 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.nav-underline:hover::after {
+  left: 0.75rem;
+  right: 0.75rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-fade-in-left,
+  .animate-marquee { animation: none; }
+}
