@@ -1,8 +1,9 @@
 import { NavLink, Link, Outlet, useLocation } from 'react-router-dom'
 import { Sparkles } from 'lucide-react'
-import { useEffect } from 'react'
+import { Suspense, useEffect } from 'react'
 import { useApp } from '../store/AppStore'
 import { TRENDS } from '../data/trends'
+import PageLoading from './PageLoading'
 
 const NAV = [
   { to: '/', label: '首页' },
@@ -133,7 +134,9 @@ export default function Layout() {
       <TopTicker />
       <Nav />
       <main className="flex-1">
-        <Outlet />
+        <Suspense fallback={<PageLoading />}>
+          <Outlet />
+        </Suspense>
       </main>
       <Footer />
     </div>

@@ -7,15 +7,15 @@
 
 import type { Style } from '../types'
 import { aiImg } from './images'
-import japaneseSweetImg from '../assets/images/japanese-sweet.jpg'
-import koreanSweetImg from '../assets/images/korean-sweet.jpg'
-import preppyGirlImg from '../assets/images/preppy-girl.jpg'
-import balletCoreImg from '../assets/images/ballet-core.jpg'
-import pureDesireImg from '../assets/images/pure-desire.jpg'
-import westernHotImg from '../assets/images/western-hot.jpg'
-import y2kImg from '../assets/images/y2k.jpg'
-import streetSweetImg from '../assets/images/street-sweet.jpg'
-import darkCoolImg from '../assets/images/dark-cool.jpg'
+import japaneseSweetImg from '../assets/images/japanese-sweet.webp'
+import koreanSweetImg from '../assets/images/korean-sweet.webp'
+import preppyGirlImg from '../assets/images/preppy-girl.webp'
+import balletCoreImg from '../assets/images/ballet-core.webp'
+import pureDesireImg from '../assets/images/pure-desire.webp'
+import westernHotImg from '../assets/images/western-hot.webp'
+import y2kImg from '../assets/images/y2k.webp'
+import streetSweetImg from '../assets/images/street-sweet.webp'
+import darkCoolImg from '../assets/images/dark-cool.webp'
 
 export const stylesPart1: Style[] = [
   {

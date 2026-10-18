@@ -6,64 +6,76 @@
 
 import type { OutfitDesign } from '../types'
 import { aiImg } from './images'
-import rainyCityImg from '../assets/images/outfit-rainy-city.jpg'
-import firstDateWhiteImg from '../assets/images/outfit-first-date-white.jpg'
-import familyGatheringImg from '../assets/images/outfit-family-gathering.jpg'
-import studyCoffeeImg from '../assets/images/outfit-study-coffee.jpg'
-import snowDayImg from '../assets/images/outfit-snow-day.jpg'
-import summerBreathImg from '../assets/images/outfit-summer-breath.jpg'
-import gardenWeddingImg from '../assets/images/outfit-garden-wedding.jpg'
-import campingOutdoorImg from '../assets/images/outfit-camping-outdoor.jpg'
-import bohoLaceImg from '../assets/images/outfit-boho-lace.jpg'
-import powerSuitImg from '../assets/images/outfit-power-suit.jpg'
-import sportyLuxeImg from '../assets/images/outfit-sporty-luxe.jpg'
-import leopardImg from '../assets/images/outfit-leopard.jpg'
-import colorBlockImg from '../assets/images/outfit-color-block.jpg'
-import bowDetailImg from '../assets/images/outfit-bow-detail.jpg'
-import mochaMousseImg from '../assets/images/outfit-mocha-mousse.jpg'
-import jellyShoesImg from '../assets/images/outfit-jelly-shoes.jpg'
-import capeImg from '../assets/images/outfit-cape.jpg'
-import leSmokingImg from '../assets/images/outfit-le-smoking.jpg'
-import highVampImg from '../assets/images/outfit-high-vamp.jpg'
-import skirtsFirstImg from '../assets/images/outfit-skirts-first.jpg'
-import sheerImg from '../assets/images/outfit-sheer.jpg'
-import cloudDancerImg from '../assets/images/outfit-cloud-dancer.jpg'
-import officeSirenImg from '../assets/images/outfit-office-siren.jpg'
-import dailyDenimKnitImg from '../assets/images/outfit-daily-denim-knit.jpg'
-import officeShirtWideImg from '../assets/images/outfit-office-shirt-wide.jpg'
-import dateDressKnitImg from '../assets/images/outfit-date-dress-knit.jpg'
-import tripLayeredComfortImg from '../assets/images/outfit-trip-layered-comfort.jpg'
-import partySuitDressImg from '../assets/images/outfit-party-suit-dress.jpg'
-import campusKnitSkirtImg from '../assets/images/outfit-campus-knit-skirt.jpg'
-import summerLinenImg from '../assets/images/outfit-summer-linen.jpg'
-import winterLayeredCoatImg from '../assets/images/outfit-winter-layered-coat.jpg'
-import weekendSweatshirtImg from '../assets/images/outfit-weekend-sweatshirt.jpg'
-import interviewClassicImg from '../assets/images/outfit-interview-classic.jpg'
-import nightSlipsilkImg from '../assets/images/outfit-night-slipsilk.jpg'
-import denimOnDenimImg from '../assets/images/outfit-denim-on-denim.jpg'
-import beachVacationImg from '../assets/images/outfit-beach-vacation.jpg'
-import picnicFloralImg from '../assets/images/outfit-picnic-floral.jpg'
-import sportyOversizeImg from '../assets/images/outfit-sporty-oversize.jpg'
-import cocktailLbdImg from '../assets/images/outfit-cocktail-lbd.jpg'
-import autumnTweedSuitImg from '../assets/images/outfit-autumn-tweed-suit.jpg'
-import neoChineseQipaoImg from '../assets/images/outfit-neo-chinese-qipao.jpg'
-import artExhibitionImg from '../assets/images/outfit-art-exhibition.jpg'
-import bikerStreetImg from '../assets/images/outfit-biker-street.jpg'
-import travelSpringImg from '../assets/images/outfit-travel-spring.jpg'
-import travelSummerImg from '../assets/images/outfit-travel-summer.jpg'
-import travelAutumnImg from '../assets/images/outfit-travel-autumn.jpg'
-import travelWinterImg from '../assets/images/outfit-travel-winter.jpg'
-import campusSpringImg from '../assets/images/outfit-campus-spring.jpg'
-import campusSummerImg from '../assets/images/outfit-campus-summer.jpg'
-import campusAutumnImg from '../assets/images/outfit-campus-autumn.jpg'
-import campusWinterImg from '../assets/images/outfit-campus-winter.jpg'
-import partyAffordableImg from '../assets/images/outfit-party-affordable.jpg'
-import partyVintageThriftImg from '../assets/images/outfit-party-vintage-thrift.jpg'
-import dailyLuxeImg from '../assets/images/outfit-daily-luxe.jpg'
-import dateWinterImg from '../assets/images/outfit-date-winter.jpg'
-import commuteSmartImg from '../assets/images/outfit-commute-smart.jpg'
-import partyWinterImg from '../assets/images/outfit-party-winter.jpg'
+import rainyCityImg from '../assets/images/outfit-rainy-city.webp'
+import firstDateWhiteImg from '../assets/images/outfit-first-date-white.webp'
+import familyGatheringImg from '../assets/images/outfit-family-gathering.webp'
+import studyCoffeeImg from '../assets/images/outfit-study-coffee.webp'
+import snowDayImg from '../assets/images/outfit-snow-day.webp'
+import summerBreathImg from '../assets/images/outfit-summer-breath.webp'
+import gardenWeddingImg from '../assets/images/outfit-garden-wedding.webp'
+import campingOutdoorImg from '../assets/images/outfit-camping-outdoor.webp'
+import bohoLaceImg from '../assets/images/outfit-boho-lace.webp'
+import powerSuitImg from '../assets/images/outfit-power-suit.webp'
+import sportyLuxeImg from '../assets/images/outfit-sporty-luxe.webp'
+import leopardImg from '../assets/images/outfit-leopard.webp'
+import colorBlockImg from '../assets/images/outfit-color-block.webp'
+import bowDetailImg from '../assets/images/outfit-bow-detail.webp'
+import mochaMousseImg from '../assets/images/outfit-mocha-mousse.webp'
+import jellyShoesImg from '../assets/images/outfit-jelly-shoes.webp'
+import capeImg from '../assets/images/outfit-cape.webp'
+import leSmokingImg from '../assets/images/outfit-le-smoking.webp'
+import highVampImg from '../assets/images/outfit-high-vamp.webp'
+import skirtsFirstImg from '../assets/images/outfit-skirts-first.webp'
+import sheerImg from '../assets/images/outfit-sheer.webp'
+import cloudDancerImg from '../assets/images/outfit-cloud-dancer.webp'
+import officeSirenImg from '../assets/images/outfit-office-siren.webp'
+import dailyDenimKnitImg from '../assets/images/outfit-daily-denim-knit.webp'
+import officeShirtWideImg from '../assets/images/outfit-office-shirt-wide.webp'
+import dateDressKnitImg from '../assets/images/outfit-date-dress-knit.webp'
+import tripLayeredComfortImg from '../assets/images/outfit-trip-layered-comfort.webp'
+import partySuitDressImg from '../assets/images/outfit-party-suit-dress.webp'
+import campusKnitSkirtImg from '../assets/images/outfit-campus-knit-skirt.webp'
+import summerLinenImg from '../assets/images/outfit-summer-linen.webp'
+import winterLayeredCoatImg from '../assets/images/outfit-winter-layered-coat.webp'
+import weekendSweatshirtImg from '../assets/images/outfit-weekend-sweatshirt.webp'
+import interviewClassicImg from '../assets/images/outfit-interview-classic.webp'
+import nightSlipsilkImg from '../assets/images/outfit-night-slipsilk.webp'
+import denimOnDenimImg from '../assets/images/outfit-denim-on-denim.webp'
+import beachVacationImg from '../assets/images/outfit-beach-vacation.webp'
+import picnicFloralImg from '../assets/images/outfit-picnic-floral.webp'
+import sportyOversizeImg from '../assets/images/outfit-sporty-oversize.webp'
+import cocktailLbdImg from '../assets/images/outfit-cocktail-lbd.webp'
+import autumnTweedSuitImg from '../assets/images/outfit-autumn-tweed-suit.webp'
+import neoChineseQipaoImg from '../assets/images/outfit-neo-chinese-qipao.webp'
+import artExhibitionImg from '../assets/images/outfit-art-exhibition.webp'
+import bikerStreetImg from '../assets/images/outfit-biker-street.webp'
+import travelSpringImg from '../assets/images/outfit-travel-spring.webp'
+import travelSummerImg from '../assets/images/outfit-travel-summer.webp'
+import travelAutumnImg from '../assets/images/outfit-travel-autumn.webp'
+import travelWinterImg from '../assets/images/outfit-travel-winter.webp'
+import campusSpringImg from '../assets/images/outfit-campus-spring.webp'
+import campusSummerImg from '../assets/images/outfit-campus-summer.webp'
+import campusAutumnImg from '../assets/images/outfit-campus-autumn.webp'
+import campusWinterImg from '../assets/images/outfit-campus-winter.webp'
+import partyAffordableImg from '../assets/images/outfit-party-affordable.webp'
+import partyVintageThriftImg from '../assets/images/outfit-party-vintage-thrift.webp'
+import dailyLuxeImg from '../assets/images/outfit-daily-luxe.webp'
+import dateWinterImg from '../assets/images/outfit-date-winter.webp'
+import commuteSmartImg from '../assets/images/outfit-commute-smart.webp'
+import partyWinterImg from '../assets/images/outfit-party-winter.webp'
+
 
+// 补图：原先走远程生成接口的条目，已落地为本地图
+import grecianWrapDateImg from '../assets/images/grecian-wrap-date.webp'
+import gothicVelvetDateImg from '../assets/images/gothic-velvet-date.webp'
+import longExitShirtDailyImg from '../assets/images/long-exit-shirt-daily.webp'
+import checkedCoatCommuteImg from '../assets/images/checked-coat-commute.webp'
+import operaGlovesPartyImg from '../assets/images/opera-gloves-party.webp'
+import broochLapelDailyImg from '../assets/images/brooch-lapel-daily.webp'
+import beltDressSummerImg from '../assets/images/belt-dress-summer.webp'
+import fringeSkirtPartyImg from '../assets/images/fringe-skirt-party.webp'
+import gothicCoatWinterImg from '../assets/images/gothic-coat-winter.webp'
+import checkedBlazerCampusImg from '../assets/images/checked-blazer-campus.webp'
 export const OUTFIT_DESIGNS: OutfitDesign[] = [
   {
     id: 'daily-denim-knit',
@@ -2210,7 +2222,8 @@ export const OUTFIT_DESIGNS: OutfitDesign[] = [
         '希腊垂坠约会穿搭示例',
         '#E8D5B8',
         '#D9BE8F',
-      ),
+      ),
+      src: grecianWrapDateImg,
     },
   },
   {
@@ -2246,7 +2259,8 @@ export const OUTFIT_DESIGNS: OutfitDesign[] = [
         '哥特丝绒约会穿搭示例',
         '#1B1B1B',
         '#7A3B3B',
-      ),
+      ),
+      src: gothicVelvetDateImg,
     },
   },
   {
@@ -2282,7 +2296,8 @@ export const OUTFIT_DESIGNS: OutfitDesign[] = [
         '拖尾衬衫日常穿搭示例',
         '#FFFFFF',
         '#7E97B8',
-      ),
+      ),
+      src: longExitShirtDailyImg,
     },
   },
   {
@@ -2318,7 +2333,8 @@ export const OUTFIT_DESIGNS: OutfitDesign[] = [
         '格纹大衣通勤穿搭示例',
         '#8C6B4A',
         '#E8DCC8',
-      ),
+      ),
+      src: checkedCoatCommuteImg,
     },
   },
   {
@@ -2355,7 +2371,8 @@ export const OUTFIT_DESIGNS: OutfitDesign[] = [
         '歌剧手套聚会穿搭示例',
         '#1B1B1B',
         '#C9A45C',
-      ),
+      ),
+      src: operaGlovesPartyImg,
     },
   },
   {
@@ -2391,7 +2408,8 @@ export const OUTFIT_DESIGNS: OutfitDesign[] = [
         '胸针点睛日常穿搭示例',
         '#E8DCC8',
         '#C9A45C',
-      ),
+      ),
+      src: broochLapelDailyImg,
     },
   },
   {
@@ -2428,7 +2446,8 @@ export const OUTFIT_DESIGNS: OutfitDesign[] = [
         '腰封连衣裙约会穿搭示例',
         '#F5EDE0',
         '#8C6B4A',
-      ),
+      ),
+      src: beltDressSummerImg,
     },
   },
   {
@@ -2464,7 +2483,8 @@ export const OUTFIT_DESIGNS: OutfitDesign[] = [
         '流苏半裙聚会穿搭示例',
         '#F5F0E8',
         '#D9BE8F',
-      ),
+      ),
+      src: fringeSkirtPartyImg,
     },
   },
   {
@@ -2500,7 +2520,8 @@ export const OUTFIT_DESIGNS: OutfitDesign[] = [
         '哥特冬装日常穿搭示例',
         '#1B1B1B',
         '#4A4A48',
-      ),
+      ),
+      src: gothicCoatWinterImg,
     },
   },
   {
@@ -2536,7 +2557,8 @@ export const OUTFIT_DESIGNS: OutfitDesign[] = [
         '格纹校园穿搭示例',
         '#4A5D4A',
         '#F5F0E8',
-      ),
+      ),
+      src: checkedBlazerCampusImg,
     },
   },
 ]

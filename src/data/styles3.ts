@@ -5,12 +5,12 @@
 
 import type { Style } from '../types'
 import { aiImg } from './images'
-import literaryImg from '../assets/images/literary-chic.jpg'
-import androgynousImg from '../assets/images/androgynous.jpg'
-import sportyImg from '../assets/images/sporty-leisure.jpg'
-import outdoorImg from '../assets/images/outdoor-mountain.jpg'
-import gothicImg from '../assets/images/gothic-dark(1).jpg'
-import newchineseImg from '../assets/images/new-chinese.jpg'
+import literaryImg from '../assets/images/literary-chic.webp'
+import androgynousImg from '../assets/images/androgynous.webp'
+import sportyImg from '../assets/images/sporty-leisure.webp'
+import outdoorImg from '../assets/images/outdoor-mountain.webp'
+import gothicImg from '../assets/images/gothic-dark(1).webp'
+import newchineseImg from '../assets/images/new-chinese.webp'
 
 export const stylesPart3: Style[] = [
   {

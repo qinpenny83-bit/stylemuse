@@ -4,13 +4,13 @@
 
 import type { Style } from '../types'
 import { aiImg } from './images'
-import gentleLadyImg from '../assets/images/gentle-lady.jpg'
-import coolLadyImg from '../assets/images/cool-lady.jpg'
-import smartCasualImg from '../assets/images/smart-casual.jpg'
-import minimalLuxImg from '../assets/images/minimal-lux.jpg'
-import elegantSocialiteImg from '../assets/images/elegant-socialite.jpg'
-import frenchLazyImg from '../assets/images/french-lazy.jpg'
-import vintageHkImg from '../assets/images/vintage-hk.jpg'
+import gentleLadyImg from '../assets/images/gentle-lady.webp'
+import coolLadyImg from '../assets/images/cool-lady.webp'
+import smartCasualImg from '../assets/images/smart-casual.webp'
+import minimalLuxImg from '../assets/images/minimal-lux.webp'
+import elegantSocialiteImg from '../assets/images/elegant-socialite.webp'
+import frenchLazyImg from '../assets/images/french-lazy.webp'
+import vintageHkImg from '../assets/images/vintage-hk.webp'
 
 export const stylesPart2: Style[] = [
   {

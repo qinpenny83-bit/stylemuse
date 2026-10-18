@@ -10,6 +10,8 @@ import DetailModal from '../components/DetailModal'
 import { EmptyState, Notice } from '../components/Feedback'
 import { ColorDots } from '../components/Palette'
 import { TrendBadge, TrendInfoBlock, usedTrendIds } from '../components/Trend'
+import LoadMore from '../components/LoadMore'
+import { usePagedList } from '../hooks/usePagedList'
 
 const LENGTHS = ['短发', '中长发', '长发']
 const TEXTURES = ['直发', '卷发', '层次']
@@ -202,6 +204,8 @@ export default function HairStudio() {
     return m
   }, [length, texture, face, styleName, maxCare])
 
+  const { visible, hasMore, remaining, loadMore } = usePagedList(filtered, 12)
+
   const [active, setActive] = useState<HairDesign | null>(null)
 
   const FilterRow = ({ label, options, value, onChange, format, counts }: {
@@ -303,7 +307,7 @@ export default function HairStudio() {
         </div>
       ) : (
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((h) => (
+          {visible.map((h) => (
             <button
               key={h.id}
               type="button"
@@ -336,6 +340,8 @@ export default function HairStudio() {
           ))}
         </div>
       )}
+
+      {filtered.length > 0 && <LoadMore hasMore={hasMore} remaining={remaining} onClick={loadMore} />}
 
       <DetailModal open={Boolean(active)} onClose={() => setActive(null)}>
         {active && <Detail h={active} />}

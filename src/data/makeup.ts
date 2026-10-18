@@ -5,55 +5,65 @@
 
 import type { MakeupDesign } from '../types'
 import { aiImg } from './images'
-import dailySheerImg from '../assets/images/makeup-daily-sheer.jpg'
-import officeRoseImg from '../assets/images/makeup-office-rose.jpg'
-import hotChocolateImg from '../assets/images/makeup-hot-chocolate.jpg'
-import ladyWineImg from '../assets/images/makeup-lady-wine.jpg'
-import retroHkImg from '../assets/images/makeup-retro-hk.jpg'
-import glassClearImg from '../assets/images/makeup-glass-clear.jpg'
-import sweetCoolSmokeImg from '../assets/images/makeup-sweet-cool-smoke.jpg'
-import satinSkinImg from '../assets/images/makeup-satin-skin.jpg'
-import darkCherryImg from '../assets/images/makeup-dark-cherry-lips.jpg'
-import berryImg from '../assets/images/makeup-berry.jpg'
-import blushRenImg from '../assets/images/makeup-blush-renaissance.jpg'
-import eyelinerRevImg from '../assets/images/makeup-eyeliner-revival.jpg'
-import ninetiesLipsImg from '../assets/images/makeup-nineties-lips.jpg'
-import frostedImg from '../assets/images/makeup-frosted.jpg'
-import lazyBeautyImg from '../assets/images/makeup-lazy-beauty.jpg'
-import butterGlamImg from '../assets/images/makeup-butter-glam.jpg'
-import cherryColaMakeupImg from '../assets/images/makeup-cherry-cola.jpg'
-import microLinerImg from '../assets/images/makeup-micro-liner.jpg'
-import statementRedImg from '../assets/images/makeup-statement-red.jpg'
-import dailyNudeImg from '../assets/images/makeup-daily-nude.jpg'
-import officeCleanImg from '../assets/images/makeup-office-clean.jpg'
-import dateGlowingImg from '../assets/images/makeup-date-glowing.jpg'
-import sweetFlowerImg from '../assets/images/makeup-sweet-flower.jpg'
-import hotGirlImg from '../assets/images/makeup-hot-girl.jpg'
-import bossLadyImg from '../assets/images/makeup-boss-lady.jpg'
-import sweetCoolImg from '../assets/images/makeup-sweet-cool.jpg'
-import glassSkinImg from '../assets/images/makeup-glass-skin.jpg'
-import retroClassicImg from '../assets/images/makeup-retro-classic.jpg'
-import japanOrangeImg from '../assets/images/makeup-japan-orange.jpg'
-import coolGrayImg from '../assets/images/makeup-cool-gray.jpg'
-import thaiMixedImg from '../assets/images/makeup-thai-mixed.jpg'
-import wineMoodImg from '../assets/images/makeup-wine-mood.jpg'
-import pureWhiteWaterImg from '../assets/images/makeup-pure-white-water.jpg'
-import neoChineseEleganceImg from '../assets/images/makeup-neo-chinese-elegance.jpg'
-import euroGlamImg from '../assets/images/makeup-euro-glam.jpg'
-import sunburnGirlImg from '../assets/images/makeup-sunburn-girl.jpg'
-import creamPeachImg from '../assets/images/makeup-cream-peach.jpg'
-import koreanGlassDateImg from '../assets/images/makeup-korean-glass-date.jpg'
-import commuteCleanImg from '../assets/images/makeup-commute-clean.jpg'
-import commutePrecisionImg from '../assets/images/makeup-commute-precision.jpg'
-import zakkaCuteImg from '../assets/images/makeup-zakka-cute.jpg'
-import moodAtmosphereImg from '../assets/images/makeup-mood-atmosphere.jpg'
-import pureDesireRoseImg from '../assets/images/makeup-pure-desire-rose.jpg'
-import neoChineseInkImg from '../assets/images/makeup-neo-chinese-ink.jpg'
-import retroBurgundyImg from '../assets/images/makeup-retro-burgundy.jpg'
-import sunburnSoftImg from '../assets/images/makeup-sunburn-soft.jpg'
-import euroContourImg from '../assets/images/makeup-euro-contour.jpg'
-import coolMinimalImg from '../assets/images/makeup-cool-minimal.jpg'
+import dailySheerImg from '../assets/images/makeup-daily-sheer.webp'
+import officeRoseImg from '../assets/images/makeup-office-rose.webp'
+import hotChocolateImg from '../assets/images/makeup-hot-chocolate.webp'
+import ladyWineImg from '../assets/images/makeup-lady-wine.webp'
+import retroHkImg from '../assets/images/makeup-retro-hk.webp'
+import glassClearImg from '../assets/images/makeup-glass-clear.webp'
+import sweetCoolSmokeImg from '../assets/images/makeup-sweet-cool-smoke.webp'
+import satinSkinImg from '../assets/images/makeup-satin-skin.webp'
+import darkCherryImg from '../assets/images/makeup-dark-cherry-lips.webp'
+import berryImg from '../assets/images/makeup-berry.webp'
+import blushRenImg from '../assets/images/makeup-blush-renaissance.webp'
+import eyelinerRevImg from '../assets/images/makeup-eyeliner-revival.webp'
+import ninetiesLipsImg from '../assets/images/makeup-nineties-lips.webp'
+import frostedImg from '../assets/images/makeup-frosted.webp'
+import lazyBeautyImg from '../assets/images/makeup-lazy-beauty.webp'
+import butterGlamImg from '../assets/images/makeup-butter-glam.webp'
+import cherryColaMakeupImg from '../assets/images/makeup-cherry-cola.webp'
+import microLinerImg from '../assets/images/makeup-micro-liner.webp'
+import statementRedImg from '../assets/images/makeup-statement-red.webp'
+import dailyNudeImg from '../assets/images/makeup-daily-nude.webp'
+import officeCleanImg from '../assets/images/makeup-office-clean.webp'
+import dateGlowingImg from '../assets/images/makeup-date-glowing.webp'
+import sweetFlowerImg from '../assets/images/makeup-sweet-flower.webp'
+import hotGirlImg from '../assets/images/makeup-hot-girl.webp'
+import bossLadyImg from '../assets/images/makeup-boss-lady.webp'
+import sweetCoolImg from '../assets/images/makeup-sweet-cool.webp'
+import glassSkinImg from '../assets/images/makeup-glass-skin.webp'
+import retroClassicImg from '../assets/images/makeup-retro-classic.webp'
+import japanOrangeImg from '../assets/images/makeup-japan-orange.webp'
+import coolGrayImg from '../assets/images/makeup-cool-gray.webp'
+import thaiMixedImg from '../assets/images/makeup-thai-mixed.webp'
+import wineMoodImg from '../assets/images/makeup-wine-mood.webp'
+import pureWhiteWaterImg from '../assets/images/makeup-pure-white-water.webp'
+import neoChineseEleganceImg from '../assets/images/makeup-neo-chinese-elegance.webp'
+import euroGlamImg from '../assets/images/makeup-euro-glam.webp'
+import sunburnGirlImg from '../assets/images/makeup-sunburn-girl.webp'
+import creamPeachImg from '../assets/images/makeup-cream-peach.webp'
+import koreanGlassDateImg from '../assets/images/makeup-korean-glass-date.webp'
+import commuteCleanImg from '../assets/images/makeup-commute-clean.webp'
+import commutePrecisionImg from '../assets/images/makeup-commute-precision.webp'
+import zakkaCuteImg from '../assets/images/makeup-zakka-cute.webp'
+import moodAtmosphereImg from '../assets/images/makeup-mood-atmosphere.webp'
+import pureDesireRoseImg from '../assets/images/makeup-pure-desire-rose.webp'
+import neoChineseInkImg from '../assets/images/makeup-neo-chinese-ink.webp'
+import retroBurgundyImg from '../assets/images/makeup-retro-burgundy.webp'
+import sunburnSoftImg from '../assets/images/makeup-sunburn-soft.webp'
+import euroContourImg from '../assets/images/makeup-euro-contour.webp'
+import coolMinimalImg from '../assets/images/makeup-cool-minimal.webp'
+
 
+// 补图：原先走远程生成接口的条目，已落地为本地图
+import chillFlushDailyImg from '../assets/images/chill-flush-daily.webp'
+import buttonNoseBlushCuteImg from '../assets/images/button-nose-blush-cute.webp'
+import greyscaleSmokyNightImg from '../assets/images/greyscale-smoky-night.webp'
+import skyBlueRetroImg from '../assets/images/sky-blue-retro.webp'
+import velvetMatteEveningImg from '../assets/images/velvet-matte-evening.webp'
+import ninetiesLinedLipImg from '../assets/images/nineties-lined-lip.webp'
+import chillFlushDateImg from '../assets/images/chill-flush-date.webp'
+import velvetMatteOfficeImg from '../assets/images/velvet-matte-office.webp'
 export const MAKEUP_DESIGNS: MakeupDesign[] = [
   {
     id: 'daily-nude',
@@ -2150,7 +2160,8 @@ export const MAKEUP_DESIGNS: MakeupDesign[] = [
         '冻感红晕妆效果图',
         '#C96A5F',
         '#E6C9B8',
-      ),
+      ),
+      src: chillFlushDailyImg,
     },
   },
   {
@@ -2191,7 +2202,8 @@ export const MAKEUP_DESIGNS: MakeupDesign[] = [
         '纽扣鼻腮红甜妹妆效果图',
         '#F0B8C2',
         '#F5C6A8',
-      ),
+      ),
+      src: buttonNoseBlushCuteImg,
     },
   },
   {
@@ -2233,7 +2245,8 @@ export const MAKEUP_DESIGNS: MakeupDesign[] = [
         '灰调烟熏夜妆效果图',
         '#8A8F98',
         '#4A4E57',
-      ),
+      ),
+      src: greyscaleSmokyNightImg,
     },
   },
   {
@@ -2274,7 +2287,8 @@ export const MAKEUP_DESIGNS: MakeupDesign[] = [
         '天际蓝复古眼妆效果图',
         '#7FA8C9',
         '#A3BED9',
-      ),
+      ),
+      src: skyBlueRetroImg,
     },
   },
   {
@@ -2315,7 +2329,8 @@ export const MAKEUP_DESIGNS: MakeupDesign[] = [
         '丝绒雾唇晚宴妆效果图',
         '#8E2F3A',
         '#6E3B5E',
-      ),
+      ),
+      src: velvetMatteEveningImg,
     },
   },
   {
@@ -2357,7 +2372,8 @@ export const MAKEUP_DESIGNS: MakeupDesign[] = [
         '90s 轮廓唇线妆效果图',
         '#7A5A44',
         '#D9B89C',
-      ),
+      ),
+      src: ninetiesLinedLipImg,
     },
   },
   {
@@ -2398,7 +2414,8 @@ export const MAKEUP_DESIGNS: MakeupDesign[] = [
         '冻感约会微醺妆效果图',
         '#C4554F',
         '#B98B7F',
-      ),
+      ),
+      src: chillFlushDateImg,
     },
   },
   {
@@ -2439,7 +2456,8 @@ export const MAKEUP_DESIGNS: MakeupDesign[] = [
         '丝绒雾唇通勤妆效果图',
         '#B0705E',
         '#B08B8F',
-      ),
+      ),
+      src: velvetMatteOfficeImg,
     },
   },
 ]

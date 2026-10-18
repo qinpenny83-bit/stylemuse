@@ -9,6 +9,8 @@ import DetailModal from '../components/DetailModal'
 import { EmptyState, Notice } from '../components/Feedback'
 import { ColorDots } from '../components/Palette'
 import { TrendBadge, TrendInfoBlock, usedTrendIds } from '../components/Trend'
+import LoadMore from '../components/LoadMore'
+import { usePagedList } from '../hooks/usePagedList'
 
 const TYPES = [...new Set(MAKEUP_DESIGNS.map((m) => m.type))]
 const TREND_IDS = usedTrendIds(MAKEUP_DESIGNS)
@@ -117,6 +119,9 @@ export default function MakeupStudio() {
       ),
     [type, diff, trend],
   )
+
+  const { visible, hasMore, remaining, loadMore } = usePagedList(filtered, 12)
+
 
   // 每个筛选选项在当前其他条件下的结果数
   const typeCounts = useMemo(() => {
@@ -243,7 +248,7 @@ export default function MakeupStudio() {
         </div>
       ) : (
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((m) => (
+          {visible.map((m) => (
             <button
               key={m.id}
               type="button"
@@ -275,6 +280,8 @@ export default function MakeupStudio() {
           ))}
         </div>
       )}
+
+      {filtered.length > 0 && <LoadMore hasMore={hasMore} remaining={remaining} onClick={loadMore} />}
 
       <DetailModal open={Boolean(active)} onClose={() => setActive(null)}>
         {active && <Detail m={active} />}

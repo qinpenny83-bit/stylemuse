@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "audit": "node scripts/audit-integrity.cjs",
+    "images:compress": "node scripts/compress-images.cjs"
   },
   "dependencies": {
     "lucide-react": "^0.469.0",
@@ -23,9 +25,13 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
+    "sharp": "^0.35.5",
     "tailwindcss": "^4.0.0",
     "typescript": "~5.6.2",
     "vite": "^5.4.11",
     "vitest": "^2.1.8"
+  },
+  "allowScripts": {
+    "esbuild@0.21.5": true
   }
 }

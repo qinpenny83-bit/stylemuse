@@ -6,49 +6,59 @@
 
 import type { HairDesign } from '../types'
 import { aiImg } from './images'
-import microWaveShortImg from '../assets/images/hair-micro-wave-short.jpg'
-import softPermMidImg from '../assets/images/hair-soft-perm-mid.jpg'
-import asymBobImg from '../assets/images/hair-asym-bob.jpg'
-import twinBunImg from '../assets/images/hair-twin-bun.jpg'
-import braidRomanticImg from '../assets/images/hair-braid-romantic.jpg'
-import dutchBraidSportyImg from '../assets/images/hair-dutch-braid-sporty.jpg'
-import italianBobImg from '../assets/images/hair-italian-bob.jpg'
-import jellyfishCutImg from '../assets/images/hair-jellyfish-cut.jpg'
-import bixieCutImg from '../assets/images/hair-bixie.jpg'
-import pixieTextureImg from '../assets/images/hair-pixie.jpg'
-import supermodelStraightImg from '../assets/images/hair-smooth-supermodel.jpg'
-import undoneWavesTrendImg from '../assets/images/hair-undone-waves.jpg'
-import cherryColaImg from '../assets/images/hair-cherry-cola.jpg'
-import copperHairImg from '../assets/images/hair-copper.jpg'
-import swingBobImg from '../assets/images/hair-swing-bob.jpg'
-import haloLayersImg from '../assets/images/hair-halo-layers.jpg'
-import honeyBrondeImg from '../assets/images/hair-honey-bronde.jpg'
-import cinnamonSpiceImg from '../assets/images/hair-cinnamon-spice.jpg'
-import shoulderBobImg from '../assets/images/hair-shoulder-bob.jpg'
-import airBangsLongImg from '../assets/images/hair-air-bangs-long.jpg'
-import koreanWaveImg from '../assets/images/hair-korean-wave.jpg'
-import balayageLayersImg from '../assets/images/hair-balayage-layers.jpg'
-import shortWolfImg from '../assets/images/hair-short-wolf.jpg'
-import midLowPonyImg from '../assets/images/hair-mid-low-pony.jpg'
-import bubblePermImg from '../assets/images/hair-bubble-perm.jpg'
-import faceFramingShortImg from '../assets/images/hair-face-framing-short.jpg'
-import longLayeredVolumeImg from '../assets/images/hair-long-layered-volume.jpg'
-import midHairBunImg from '../assets/images/hair-mid-hair-bun.jpg'
-import classicBobImg from '../assets/images/hair-classic-bob.jpg'
-import curtainBangsLongImg from '../assets/images/hair-curtain-bangs-long.jpg'
-import woolPermMidImg from '../assets/images/hair-wool-perm-mid.jpg'
-import pixieShortImg from '../assets/images/hair-pixie-short.jpg'
-import highPonySportyImg from '../assets/images/hair-high-pony-sporty.jpg'
-import lowBunElegantImg from '../assets/images/hair-low-bun-elegant.jpg'
-import shortCurlBobImg from '../assets/images/hair-short-curl-bob.jpg'
-import shortWavePixieImg from '../assets/images/hair-short-wave-pixie.jpg'
-import longLayeredWaveImg from '../assets/images/hair-long-layered-wave.jpg'
-import longFeatherCutImg from '../assets/images/hair-long-feather-cut.jpg'
-import longCurlRomanticImg from '../assets/images/hair-long-curl-romantic.jpg'
-import midFeatherWolfImg from '../assets/images/hair-mid-feather-wolf.jpg'
-import shortStraightBluntImg from '../assets/images/hair-short-straight-blunt.jpg'
-import longSleekStraightImg from '../assets/images/hair-long-sleek-straight.jpg'
+import microWaveShortImg from '../assets/images/hair-micro-wave-short.webp'
+import softPermMidImg from '../assets/images/hair-soft-perm-mid.webp'
+import asymBobImg from '../assets/images/hair-asym-bob.webp'
+import twinBunImg from '../assets/images/hair-twin-bun.webp'
+import braidRomanticImg from '../assets/images/hair-braid-romantic.webp'
+import dutchBraidSportyImg from '../assets/images/hair-dutch-braid-sporty.webp'
+import italianBobImg from '../assets/images/hair-italian-bob.webp'
+import jellyfishCutImg from '../assets/images/hair-jellyfish-cut.webp'
+import bixieCutImg from '../assets/images/hair-bixie.webp'
+import pixieTextureImg from '../assets/images/hair-pixie.webp'
+import supermodelStraightImg from '../assets/images/hair-smooth-supermodel.webp'
+import undoneWavesTrendImg from '../assets/images/hair-undone-waves.webp'
+import cherryColaImg from '../assets/images/hair-cherry-cola.webp'
+import copperHairImg from '../assets/images/hair-copper.webp'
+import swingBobImg from '../assets/images/hair-swing-bob.webp'
+import haloLayersImg from '../assets/images/hair-halo-layers.webp'
+import honeyBrondeImg from '../assets/images/hair-honey-bronde.webp'
+import cinnamonSpiceImg from '../assets/images/hair-cinnamon-spice.webp'
+import shoulderBobImg from '../assets/images/hair-shoulder-bob.webp'
+import airBangsLongImg from '../assets/images/hair-air-bangs-long.webp'
+import koreanWaveImg from '../assets/images/hair-korean-wave.webp'
+import balayageLayersImg from '../assets/images/hair-balayage-layers.webp'
+import shortWolfImg from '../assets/images/hair-short-wolf.webp'
+import midLowPonyImg from '../assets/images/hair-mid-low-pony.webp'
+import bubblePermImg from '../assets/images/hair-bubble-perm.webp'
+import faceFramingShortImg from '../assets/images/hair-face-framing-short.webp'
+import longLayeredVolumeImg from '../assets/images/hair-long-layered-volume.webp'
+import midHairBunImg from '../assets/images/hair-mid-hair-bun.webp'
+import classicBobImg from '../assets/images/hair-classic-bob.webp'
+import curtainBangsLongImg from '../assets/images/hair-curtain-bangs-long.webp'
+import woolPermMidImg from '../assets/images/hair-wool-perm-mid.webp'
+import pixieShortImg from '../assets/images/hair-pixie-short.webp'
+import highPonySportyImg from '../assets/images/hair-high-pony-sporty.webp'
+import lowBunElegantImg from '../assets/images/hair-low-bun-elegant.webp'
+import shortCurlBobImg from '../assets/images/hair-short-curl-bob.webp'
+import shortWavePixieImg from '../assets/images/hair-short-wave-pixie.webp'
+import longLayeredWaveImg from '../assets/images/hair-long-layered-wave.webp'
+import longFeatherCutImg from '../assets/images/hair-long-feather-cut.webp'
+import longCurlRomanticImg from '../assets/images/hair-long-curl-romantic.webp'
+import midFeatherWolfImg from '../assets/images/hair-mid-feather-wolf.webp'
+import shortStraightBluntImg from '../assets/images/hair-short-straight-blunt.webp'
+import longSleekStraightImg from '../assets/images/hair-long-sleek-straight.webp'
+
 
+// 补图：原先走远程生成接口的条目，已落地为本地图
+import bessetteLongBlondeImg from '../assets/images/bessette-long-blonde.webp'
+import meltedBrunetteMidImg from '../assets/images/melted-brunette-mid.webp'
+import bubbleBlowoutBobImg from '../assets/images/bubble-blowout-bob.webp'
+import ultraHighVolumeLongImg from '../assets/images/ultra-high-volume-long.webp'
+import softPeachyRedMidImg from '../assets/images/soft-peachy-red-mid.webp'
+import enchantedCrimpsMidImg from '../assets/images/enchanted-crimps-mid.webp'
+import bessetteBlondeBobImg from '../assets/images/bessette-blonde-bob.webp'
+import meltedBrunetteLongCurlImg from '../assets/images/melted-brunette-long-curl.webp'
 export const HAIR_DESIGNS: HairDesign[] = [
   {
     id: 'shoulder-bob',
@@ -1422,7 +1432,8 @@ export const HAIR_DESIGNS: HairDesign[] = [
         '贝塞特金发长直发示例',
         '#C9A45C',
         '#F5EDE0',
-      ),
+      ),
+      src: bessetteLongBlondeImg,
     },
   },
   {
@@ -1453,7 +1464,8 @@ export const HAIR_DESIGNS: HairDesign[] = [
         '融色棕中长发示例',
         '#6E5A4A',
         '#C9A26B',
-      ),
+      ),
+      src: meltedBrunetteMidImg,
     },
   },
   {
@@ -1484,7 +1496,8 @@ export const HAIR_DESIGNS: HairDesign[] = [
         '泡泡吹发波波头示例',
         '#4A3B32',
         '#E8DCC8',
-      ),
+      ),
+      src: bubbleBlowoutBobImg,
     },
   },
   {
@@ -1515,7 +1528,8 @@ export const HAIR_DESIGNS: HairDesign[] = [
         '高颅顶大体积长发示例',
         '#1B1B1B',
         '#6E6A66',
-      ),
+      ),
+      src: ultraHighVolumeLongImg,
     },
   },
   {
@@ -1546,7 +1560,8 @@ export const HAIR_DESIGNS: HairDesign[] = [
         '蜜桃红中长发示例',
         '#B06A52',
         '#F5C6A8',
-      ),
+      ),
+      src: softPeachyRedMidImg,
     },
   },
   {
@@ -1577,7 +1592,8 @@ export const HAIR_DESIGNS: HairDesign[] = [
         '精灵玉米卷中长发示例',
         '#4A3B32',
         '#C7C2BC',
-      ),
+      ),
+      src: enchantedCrimpsMidImg,
     },
   },
   {
@@ -1608,7 +1624,8 @@ export const HAIR_DESIGNS: HairDesign[] = [
         '贝塞特金发波波头示例',
         '#C9A45C',
         '#F7F0EB',
-      ),
+      ),
+      src: bessetteBlondeBobImg,
     },
   },
   {
@@ -1639,7 +1656,8 @@ export const HAIR_DESIGNS: HairDesign[] = [
         '融色棕长发大卷示例',
         '#4A3226',
         '#8A6A4F',
-      ),
+      ),
+      src: meltedBrunetteLongCurlImg,
     },
   },
 ]

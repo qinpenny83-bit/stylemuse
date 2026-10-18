@@ -11,6 +11,8 @@ import DetailModal from '../components/DetailModal'
 import { EmptyState, Notice } from '../components/Feedback'
 import { PaletteSwatches } from '../components/Palette'
 import { TrendBadge, TrendInfoBlock, usedTrendIds } from '../components/Trend'
+import LoadMore from '../components/LoadMore'
+import { usePagedList } from '../hooks/usePagedList'
 
 const SCENARIOS = [...new Set(OUTFIT_DESIGNS.map((o) => o.scenario))]
 const SEASONS = ['春', '夏', '秋', '冬']
@@ -165,6 +167,8 @@ export default function OutfitStudio() {
     return m
   }, [scenario, season, budget, styleName])
 
+  const { visible, hasMore, remaining, loadMore } = usePagedList(filtered, 12)
+
   const [active, setActive] = useState<OutfitDesign | null>(null)
 
   const FilterRow = ({ label, options, value, onChange, format, counts }: {
@@ -273,7 +277,7 @@ export default function OutfitStudio() {
         </div>
       ) : (
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((o) => (
+          {visible.map((o) => (
             <button
               key={o.id}
               type="button"
@@ -303,6 +307,8 @@ export default function OutfitStudio() {
           ))}
         </div>
       )}
+
+      {filtered.length > 0 && <LoadMore hasMore={hasMore} remaining={remaining} onClick={loadMore} />}
 
       <DetailModal open={Boolean(active)} onClose={() => setActive(null)}>
         {active && <Detail o={active} />}

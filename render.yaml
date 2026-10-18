@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: stylemuse
+    runtime: static
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./dist
+    # SPA 深链重写：避免刷新 /hair、/results 等子页面时 404
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    # 带 hash 的静态资源可安全长缓存；HTML 不缓存以便即时更新
+    headers:
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
+      - path: /index.html
+        name: Cache-Control
+        value: public, max-age=0, must-revalidate
